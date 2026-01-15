@@ -18,10 +18,10 @@ export default function ImgPage({ ogImage }) {
 }
 
 export async function getServerSideProps({ params }) {
-  let ogImage = "https://shorta.space/anh1.jpeg"; // default image
-  if (params.img === "anh1") ogImage = "https://shorta.space/anh1.jpeg";
-  if (params.img === "anh2") ogImage = "https://shorta.space/anh2.jpeg";
-  if (params.img === "anh3") ogImage = "https://shorta.space/anh3.jpeg";
-  if (params.img === "anh4") ogImage = "https://shorta.space/anh4.jpeg";
+  let ogImage = "/anh1.jpeg"; // default image
+  if (params.img === "anh1") ogImage = "/anh1.jpeg";
+  if (params.img === "anh2") ogImage = "/anh2.jpeg";
+  if (params.img === "anh3") ogImage = "/anh3.jpeg";
+  if (params.img === "anh4") ogImage = "/anh4.jpeg";
   return { props: { ogImage } };
 }
