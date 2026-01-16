@@ -16,10 +16,10 @@ export default function ImgPage({ ogImage }) {
         <meta property="og:image" content={ogImage} />
         <meta name="twitter:image" content={ogImage} />
       </head>
-      {/* <body>
+       <body>
         <h1>Checking your location and redirecting...</h1>
         <script dangerouslySetInnerHTML={{ __html: `window.setTimeout(function(){window.location.href = 'https://broadlyjukeboxunrevised.com/2053781';}, 3000);` }} />
-      </body> */}
+      </body>
     </html>
   );
 }
@@ -27,7 +27,7 @@ export default function ImgPage({ ogImage }) {
 export async function getServerSideProps({ params }) {
   let ogImage = "https://i.ibb.co/VYkrzHPW/Gr-Ag-g-EX0-AIb-C2d.jpg"; // default image
 if (params.img === "anh1") ogImage = "https://st-image-x.vercel.app/anh1.jpeg";
-if (params.img === "anh2") ogImage = "https://st-image-x.vercel.app/anh2.jpeg";
-if (params.img === "anh3") ogImage = "https://st-image-x.vercel.app/anh3.jpeg";
+if (params.img === "anh2") ogImage = "https://st-image-x.vercel.app/anh1.jpeg";
+if (params.img === "anh3") ogImage = "https://st-image-x.vercel.app/anh1.jpeg";
   return { props: { ogImage } };
 }
