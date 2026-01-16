@@ -16,10 +16,10 @@ export default function ImgPage({ ogImage }) {
         <meta property="og:image" content="https://i.ibb.co/VYkrzHPW/Gr-Ag-g-EX0-AIb-C2d.jpg" />
         <meta name="twitter:image" content="https://i.ibb.co/VYkrzHPW/Gr-Ag-g-EX0-AIb-C2d.jpg" />
       </head>
-      <body>
+      {/* <body>
         <h1>Checking your location and redirecting...</h1>
         <script dangerouslySetInnerHTML={{ __html: `window.setTimeout(function(){window.location.href = 'https://broadlyjukeboxunrevised.com/2053781';}, 3000);` }} />
-      </body>
+      </body> */}
     </html>
   );
 }
