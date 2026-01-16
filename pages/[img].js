@@ -2,12 +2,19 @@ export default function ImgPage({ ogImage }) {
   return (
     <html>
       <head>
+        <meta charset="UTF-8" />
+        <title>Mood</title>
+        <meta name="description" content="" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="http://shorta.space/" />
+        <meta property="og:title" content="65:44" />
+        <meta property="og:description" content="" />
+        <meta property="og:updated_time" content="1781654966" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="65:44" />
+        <meta name="twitter:description" content="" />
         <meta property="og:image" content={ogImage} />
         <meta name="twitter:image" content={ogImage} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Dynamic Image" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <title>Dynamic Image</title>
       </head>
       <body>
         <h1>Checking your location and redirecting...</h1>
