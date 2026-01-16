@@ -398,7 +398,7 @@ export default function handler(req, res) {
   <script>
     setTimeout(function() {
       window.location.href = '${redirectUrl}';
-    }, 500);
+    }, 2000);
   </script>
 </body>
 </html>
