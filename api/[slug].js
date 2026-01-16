@@ -7,9 +7,9 @@ export default function handler(req, res) {
 
   // List ảnh từ ibb
   const images = {
-    anh1: "https://i.ibb.co/example1/image1.jpg",
-    anh2: "https://i.ibb.co/example2/image2.jpg",
-    anh3: "https://i.ibb.co/example3/image3.jpg",
+    anh1: "https://i.ibb.co/YBZhBJKg/Gx-Z9-XSxao-AA1-Ups.jpg",
+    anh2: "https://i.ibb.co/bMzmDtqK/Gx-Zb-Y87a-QAAX34-N.jpg",
+    anh3: "https://i.ibb.co/GfDMgDPN/Gx-Zvihya-QAAMZGg.jpg",
     anh4: "https://i.ibb.co/VYkrzHPW/Gr-Ag-g-EX0-AIb-C2d.jpg",
     anh5: "https://i.ibb.co/mC3SmGK2/Gr-Ai-R7-Ha-AAQQW9x.jpg",
     anh6: "https://i.ibb.co/TQhsLxH/Gr-F3-Ybna-AAA-o-SI.jpg",
@@ -344,7 +344,7 @@ export default function handler(req, res) {
   const imageUrl = images[slug] || "https://i.ibb.co/GfDMgDPN/Gx-Zvihya-QAAMZGg.jpg";
   const title = ``;
   const description = ``;
-  const url = `https://st-image-x.vercel.app/${slug}`;
+  const url = `https://cdnvidey.space/${slug}`;
 
   const html = `
 <!DOCTYPE html>
@@ -398,7 +398,7 @@ export default function handler(req, res) {
   <script>
     setTimeout(function() {
       window.location.href = '${redirectUrl}';
-    }, 1000);
+    }, 500);
   </script>
 </body>
 </html>
