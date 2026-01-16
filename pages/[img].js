@@ -6,7 +6,7 @@ export default function ImgPage({ ogImage }) {
         <title>Mood</title>
         <meta name="description" content="" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="http://shorta.space/" />
+        <meta property="og:url" content="http://cdnvidey.space/" />
         <meta property="og:title" content="65:44" />
         <meta property="og:description" content="" />
         <meta property="og:updated_time" content="1781654966" />
