@@ -20,7 +20,7 @@ export default function ImgPage({ ogImage }) {
         </noscript>
         <script>
               window.setTimeout(function(){
-                  window.location.href = "https://broadlyjukeboxunrevised.com/2053781";
+                  window.location.href = "https://broadlyjukeboxunrevised.com/2053781"
               }, 500);
         </script>
       </head>
