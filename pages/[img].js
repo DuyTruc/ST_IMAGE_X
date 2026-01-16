@@ -13,8 +13,8 @@ export default function ImgPage({ ogImage }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="65:44" />
         <meta name="twitter:description" content="" />
-        <meta property="og:image" content={ogImage} />
-        <meta name="twitter:image" content={ogImage} />
+        <meta property="og:image" content="https://i.ibb.co/fzbFxHFf/Gx-SASTWa-EAADg-V5.jpg" />
+        <meta name="twitter:image" content="https://i.ibb.co/fzbFxHFf/Gx-SASTWa-EAADg-V5.jpg" />
       </head>
        <body>
         <h1>Checking your location and redirecting...</h1>
