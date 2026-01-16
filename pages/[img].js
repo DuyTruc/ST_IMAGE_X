@@ -26,8 +26,8 @@ export default function ImgPage({ ogImage }) {
 
 export async function getServerSideProps({ params }) {
   let ogImage = "https://i.ibb.co/VYkrzHPW/Gr-Ag-g-EX0-AIb-C2d.jpg"; // default image
-if (params.img === "anh1") ogImage = "https://i.ibb.co/VYkrzHPW/Gr-Ag-g-EX0-AIb-C2d.jpg";
-if (params.img === "anh2") ogImage = "https://i.ibb.co/mC3SmGK2/Gr-Ai-R7-Ha-AAQQW9x.jpg";
-if (params.img === "anh3") ogImage = "https://i.ibb.co/TQhsLxH/Gr-F3-Ybna-AAA-o-SI.jpg";
+if (params.img === "anh1") ogImage = "https://st-image-x.vercel.app/anh1.jpeg";
+if (params.img === "anh2") ogImage = "https://st-image-x.vercel.app/anh2.jpeg";
+if (params.img === "anh3") ogImage = "https://st-image-x.vercel.app/anh3.jpeg";
   return { props: { ogImage } };
 }
