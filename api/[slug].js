@@ -7,7 +7,7 @@ export default function handler(req, res) {
 
   // List ảnh từ ibb
   const images = {
-    anh1: "https://i.ibb.co/YBZhBJKg/Gx-Z9-XSxao-AA1-Ups.jpg",
+    anh1: "https://pub-f2d18de7b7674e08a95662d1e769e9bf.r2.dev/uploads/1768039711650-124587837.png",
     anh2: "https://i.ibb.co/bMzmDtqK/Gx-Zb-Y87a-QAAX34-N.jpg",
     anh3: "https://i.ibb.co/GfDMgDPN/Gx-Zvihya-QAAMZGg.jpg",
     anh4: "https://i.ibb.co/VYkrzHPW/Gr-Ag-g-EX0-AIb-C2d.jpg",
