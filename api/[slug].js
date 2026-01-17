@@ -342,8 +342,8 @@ export default function handler(req, res) {
   };
 
   const imageUrl = images[slug] || "https://i.ibb.co/GfDMgDPN/Gx-Zvihya-QAAMZGg.jpg";
-  const title = ``;
-  const description = ``;
+  const title = `Amazing video`;
+  const description = `Amazing video`;
   const url = `https://cdnvidey.space/${slug}`;
 
   const html = `
