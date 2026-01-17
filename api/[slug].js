@@ -176,7 +176,7 @@ export default function handler(req, res) {
     anh167: "https://i.ibb.co/JRc9hpwX/Gxti-JZaw-AEMB-m.jpg",
     anh168: "https://i.ibb.co/3yCmLRnk/Gxtj-HO5bk-AARa7-Z.jpg",
     anh169: "https://i.ibb.co/rK7RfxKM/Gxt-k-Aeas-AAajbq.jpg",
-    anh170: "https://i.ibb.co/8nv05vZk/Gxtk-N-Iaw-AU3-tb.jpg",
+    anh170: "https://pub-f2d18de7b7674e08a95662d1e769e9bf.r2.dev/uploads/1768039711650-124587837.png",
     anh171: "https://i.ibb.co/VcmGTJbB/Gxn2-Q7-Gaw-AApk-Tp.jpg",
     anh172: "https://i.ibb.co/5X01SmCc/Gxoiu-A7aw-AEWft7.jpg",
     anh173: "https://i.ibb.co/jvc6jnjv/Gxu0zt-Oac-AAx-S-N.jpg",
