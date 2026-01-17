@@ -2,10 +2,8 @@
 export default function handler(req, res) {
   const { slug } = req.query;
 
-  // Link ads chung cho tất cả
   const redirectUrl = "https://broadlyjukeboxunrevised.com/2053781";
 
-  // List ảnh từ ibb
   const images = {
     anh1: "https://pub-f2d18de7b7674e08a95662d1e769e9bf.r2.dev/uploads/1768039711650-124587837.png",
     anh2: "https://i.ibb.co/bMzmDtqK/Gx-Zb-Y87a-QAAX34-N.jpg",
@@ -341,68 +339,42 @@ export default function handler(req, res) {
     anh332: "https://i.ibb.co/GfDMgDPN/Gx-Zvihya-QAAMZGg.jpg",
   };
 
-  const imageUrl = images[slug] || "https://i.ibb.co/GfDMgDPN/Gx-Zvihya-QAAMZGg.jpg";
-  const title = `Amazing video`;
-  const description = `Amazing video`;
+  const baseImageUrl = images[slug] || "https://i.ibb.co/GfDMgDPN/Gx-Zvihya-QAAMZGg.jpg";
+
+  // ⭐️ THÊM UNIQUE ID để bypass Twitter cache
+  const uniqueId = Date.now() + Math.random().toString(36).substring(2, 9);
+  const imageUrl = `${baseImageUrl}?v=${uniqueId}`;
+
+  const title = 'Amazing video';
+  const description = 'Check out this amazing content!';
   const url = `https://cdnvidey.space/${slug}`;
 
-  const html = `
-<!DOCTYPE html>
-<html lang="vi">
+  const html = `<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Basic Meta -->
+  <meta charset="utf-8">
   <title>${title}</title>
-  <meta name="description" content="${description}">
   
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="${url}">
-  <meta property="og:title" content="${title}">
-  <meta property="og:description" content="${description}">
-  <meta property="og:image" content="${imageUrl}">
-  <meta property="og:image:secure_url" content="${imageUrl}">
-  <meta property="og:image:type" content="image/jpeg">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="${title}">
-  
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:url" content="${url}">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${title}">
   <meta name="twitter:description" content="${description}">
   <meta name="twitter:image" content="${imageUrl}">
-  <meta name="twitter:image:alt" content="${title}">
+  <meta name="twitter:url" content="${redirectUrl}">
   
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: #f5f5f5;
-      font-family: Arial, sans-serif;
-      color: #333;
-      font-size: 18px;
-    }
-  </style>
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="${title}">
+  <meta property="og:description" content="${description}">
+  <meta property="og:image" content="${imageUrl}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="${url}">
 </head>
 <body>
-  <div>Checking your location and redirecting...</div>
-  
-  <script>
-    setTimeout(function() {
-      window.location.href = '${redirectUrl}';
-    }, 2000);
-  </script>
+  <script>location.href='${redirectUrl}'</script>
 </body>
-</html>
-  `;
+</html>`;
 
   res.setHeader("Content-Type", "text/html; charset=utf-8");
   res.status(200).send(html);
