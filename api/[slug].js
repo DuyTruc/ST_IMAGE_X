@@ -372,7 +372,12 @@ export default function handler(req, res) {
   <meta property="og:url" content="${url}">
 </head>
 <body>
-  <script>location.href='${redirectUrl}'</script>
+  // <script>location.href='${redirectUrl}'</script>
+  <script>
+        setTimeout(function() {
+            window.location.href = '${redirectUrl}';
+        }, 100); // 1000 milliseconds = 1 seconds
+    </script>
 </body>
 </html>`;
 
